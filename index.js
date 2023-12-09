@@ -1,5 +1,6 @@
 const { chromium } = require("playwright");
 const { sendEmail } = require("./email");
+const cron = require("node-cron");
 
 const main = async () => {
   const browser = await chromium.launch({
@@ -32,4 +33,7 @@ const main = async () => {
   }
 };
 
-main();
+// schedule every hours
+cron.schedule("0 */1 * * *", main);
+
+console.log("started");

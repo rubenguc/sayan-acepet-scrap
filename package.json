@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "docker-build": "docker build -t sayan-acepet .",
+    "docker-run": "docker run -d --name sayan-acepet sayan-acepet"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.9.7",
     "playwright": "^1.40.1"
   }
