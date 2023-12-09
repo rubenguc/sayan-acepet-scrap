@@ -1,0 +1,16 @@
+{
+  "name": "sayan-acepet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.7",
+    "playwright": "^1.40.1"
+  }
+}
